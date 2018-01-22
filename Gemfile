@@ -32,6 +32,9 @@ gem 'jbuilder', '~> 2.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+#webpacker
+gem 'webpacker', '~> 3.0'
+
 gem 'disposable'
 gem 'dry-container'
 gem 'dry-monads'
