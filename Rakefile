@@ -7,7 +7,7 @@ namespace :db do
   task :setup do
     ROM::SQL::RakeSupport.env = ROM.container(
       :sql,
-      "sqlite:/home/marcin/Projects/Rails/cqrs_exploration/db/development.db",
+      "sqlite:/home/michal/repos/cqrs_exploration/db/development.db",
     )
   end
 end
