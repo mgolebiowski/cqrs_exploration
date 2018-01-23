@@ -1,4 +1,6 @@
 # frozen_string_literal: true
+require 'infrastructure/versioned_repo'
+require 'infrastructure/template_renderer'
 
 class ProductsController < ApplicationController
   include Infrastructure::ResultHandler

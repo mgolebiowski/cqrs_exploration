@@ -1,4 +1,7 @@
 # frozen_string_literal: true
+require 'customer/read_models/null_basket'
+require 'customer/read_models/null_ordered_product_line'
+
 
 module Customer
   class Boot

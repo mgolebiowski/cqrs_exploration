@@ -1,4 +1,10 @@
 # frozen_string_literal: true
+require 'infrastructure/versioned_repo'
+require 'infrastructure/event_repo'
+require 'product/repositories/product_repo'
+require 'product/services/add_product_service'
+require 'product/services/update_product_service'
+require 'product/services/products_service'
 
 module Product
   class Boot

@@ -1,4 +1,11 @@
 # frozen_string_literal: true
+require 'order/generators/draft_order_generator'
+require 'order/repositories/order_repo'
+require 'order/repositories/read/product_repo'
+require 'order/repositories/read/basket_repo'
+require 'order/read_models/order'
+require 'order/read_models/offered_product'
+require 'order/read_models/draft_order'
 
 module Order
   class Boot
