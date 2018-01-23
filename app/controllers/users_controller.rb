@@ -18,7 +18,8 @@ class UsersController < ApplicationController
         users: user_repo.all_users,
         current_user_id: session[:user_id]
       )
-    ).html_safe
+    ).html_safe,
+    layout: true
   end
 
   def new
