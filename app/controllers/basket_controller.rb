@@ -18,7 +18,8 @@ class BasketController < ApplicationController
         draft_order: draft_order.with_ordered_products(session[:user_id]),
         csrf_token: form_authenticity_token
       )
-    ).html_safe
+    ).html_safe,
+    layout: true
   end
 
   def add_products
