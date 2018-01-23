@@ -6,5 +6,9 @@
 //
 // To reference this file, add <%= javascript_pack_tag 'application' %> to the appropriate
 // layout file, like app/views/layouts/application.html.erb
+import $ from "jquery";
+import "bootstrap-sass/assets/javascripts/bootstrap";
 
+let a = $("<h1>test</h1>");
+$("body").append(a);
 console.log("Hello World from Webpacker");
