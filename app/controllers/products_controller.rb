@@ -15,6 +15,7 @@ class ProductsController < ApplicationController
   end
 
   def index
+    @js_libs = [] << 'products'
     render html: Infrastructure::TemplateRenderer.render(
       template: 'app/views/products/index.html.erb',
       view_model: Product::ProductsListViewModel.new(

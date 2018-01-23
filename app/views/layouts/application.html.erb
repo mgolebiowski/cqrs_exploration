@@ -6,9 +6,11 @@
   </head>
   <body>
     <%= yield %>
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag "js/application" %>
+
     <%= stylesheet_pack_tag 'sass/application' %>
+    <% (@js_libs || []).each do |lib| %>
+      <%= javascript_pack_tag "js/#{lib}", defer: :defer %>
+    <% end %>
   </body>
 </html>
